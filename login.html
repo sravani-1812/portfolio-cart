@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" >
+        <meta charset="utf-8"/>
+        <script src="https://kit.fontawesome.com/0e028015d4.js" crossorigin="anonymous"></script>
+    </head>
+       <style>
+         body{
+        background-image :url(loginbg.jpg);
+        text-align:center;
+        background-repeat:no-repeat;
+        padding-top:100px;
+        background-size:cover;
+        
+         }
+        
+    </style>
+    <body>
+      <div class="login-container">
+       <h1>LOGIN</h1>
+       <label>user name:</label>
+        <input type="text" placeholder="enter username" required><br><br>
+        <label>password:</label>
+        <input type="password" id="password" ><i class="fa-solid fa-eye"onclick="show()"></i><br><br>
+        <label>confrim password:</label>
+        <input type="password"><br><br>
+        <a href="index.html"><button>login</button></a>
+        <p>(or)</p>
+       <a href ="signup.html"><button>signup</button></a>
+      </div>
+      <script>
+        function show(){
+       var password=document.getElementById('password');
+       var icon=document.querySelector(".fa-solid fa-eye");
+       if(password.type==="password"){
+        password.type="text";
+       }else{
+        password.type="password";
+       }
+        }
+
+      </script>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image:url(indexbg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 100%;
+            background-attachment: fixed; 
+        
+        }
+        p{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            font-style: italic;
+            color: whitesmoke;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            padding: 10px 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .nav-links {
+            display: flex;
+        }
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .search-box {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .search-button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .search-button:hover {
+            background-color: #0056b3;
+        }
+        h1{
+            color: #ccc;
+            text-align: center;   
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="navbar">
+       
+        <div class="logo">
+            
+            <a href="cart.html">MY CAMS</a>
+        </div>
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Search...">
+            <a href="cart.html"><button class="search-button">Search</button></a>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+            <a href="cart.html">Shop</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+    </header>
+    <h1>FOCUS<br>camera    s_t_o_r_e.<br>The next gen cameras.</h1>
+   <p>We made the quality cameras and camera products.Most people trusted app.</p>
+   <p>come together and made the events success.</p>
+</body>
+</html>
